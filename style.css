@@ -20,10 +20,10 @@ a:hover {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #290d0d;
     min-height: 15vh;
     padding: 10px 5%;
+    text-align: center;
 }
 
 .logo {
