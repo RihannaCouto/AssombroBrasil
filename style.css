@@ -82,8 +82,8 @@ main {
     background-color: #ada8b6;
     text-align: center;
     border-radius: 10px;
-    width: 90%; /* Ocupa quase toda a tela no celular */
-    max-width: 800px; /* Não passa de 800px no computador */
+    width: 90%;
+    max-width: 800px;
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -91,15 +91,17 @@ main {
 .mascote {
     text-align: center;
     margin-bottom: 20px;
+    padding-left: 1070px;
+    margin-top: -150px;
 }
 
 .mascote img {
     max-width: 100%;
     height: auto;
-    width: 250px; /* Limita o tamanho máximo do mascote */
+    width: 250px;
 }
 
-/* --- FOOTER --- */
+
 footer {
     background-color: #290d0d;
     padding: 20px;
@@ -113,21 +115,20 @@ footer {
 }
 
 .contato img {
-    width: 50px; /* Um pouco menor para telas pequenas */
+    width: 50px;
     height: auto;
 }
 
-/* --- RESPONSIVIDADE (TELAS DE CELULAR) --- */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Logo fica em cima, menu embaixo */
+        flex-direction: column;
         gap: 15px;
         padding: 20px;
         text-align: center;
     }
 
     .nav-list {
-        flex-direction: column; /* Itens do menu ficam um embaixo do outro */
+        flex-direction: column;
         gap: 10px;
     }
 
@@ -136,6 +137,6 @@ footer {
     }
 
     .paragrafo {
-        font-size: 14px; /* Diminui um pouco a letra no celular */
+        font-size: 14px;
     }
 }
