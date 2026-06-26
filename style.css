@@ -70,21 +70,21 @@ main {
 }
 
 
-.miranda-sans {
-  font-family: "Miranda Sans", sans-serif;
+.playpen-sans {
+  font-family: "Playpen Sans", cursive;
   font-optical-sizing: auto;
-  font-weight:400;
+  font-weight: 100;
   font-style: normal;
 }
 
 
-p{
+.paragrafo{
     color: #c40404;
     background-color: #ada8b6;
-    text-align-last: center;
+    text-align: center;
     border-radius: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 450px;
+    margin-right: 450px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
