@@ -58,6 +58,7 @@ nav{
 
 main {
   background-size: cover;
+  height: 90vh;
   background: repeating-linear-gradient(
   to right,
   #20232d,
