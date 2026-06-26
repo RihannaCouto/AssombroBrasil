@@ -58,7 +58,7 @@ nav{
 
 main {
   background-size: cover;
-  height: 90vh;
+  height: 80vh;
   background: repeating-linear-gradient(
   to right,
   #20232d,
@@ -91,9 +91,8 @@ p{
 
 .mascote{
   position: relative;
-  margin-left: 75%;
-  bottom: 10%;
-
+  margin-left: 65%;
+  bottom: 15%;
 }
 
 
