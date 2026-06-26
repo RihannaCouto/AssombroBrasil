@@ -1,112 +1,145 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Garante que padding não quebre o tamanho dos elementos */
 }
 
-@media only screen and (max-device-width: 900px) {
-/* .menu { width:600px; } */
-}
-
-  body {
+body {
     overflow-x: hidden;
-  }
+    background-color: #1e182b;
+}
 
-a{
+a {
     text-decoration: none;
     transition: 0.3s;
-    
-
+    padding: 5px 10px; /* Dá um espaço clique para os links */
 }
 
-a:hover{
+a:hover {
     opacity: 0.7;
-    
 }
 
-.logo{
-  position: absolute;
-	left: 0%;
-	margin-right: 0%;
-}
-
-nav{
-    display: flex ;
-    justify-content: space-around;
+/* --- HEADER E MENU --- */
+nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #290d0d;
-    height: 15vh;
-    
-    
+    min-height: 15vh;
+    padding: 10px 5%; /* Espaçamento interno nas laterais */
 }
 
-.rubik-distressed-regular {
-  font-family: "Rubik Distressed", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  
+.logo {
+    max-width: 100%;
+    height: auto;
 }
-
-
 
 .nav-list {
-  list-style: none;
-  display: flex;
-  
-  
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Cria espaçamento entre os itens sem precisar de margin fixa */
 }
 
 .nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-  
-  
+    letter-spacing: 3px;
 }
 
-
-main {
-  background-size: cover;
-  height: 90vh;
-  background: repeating-linear-gradient(
-  to right,
-  #20232d,
-  #20232d 10px,
-  #1e182b 10px,
-  #1e182b 20px
-);
-
+/* --- FONTES --- */
+.rubik-distressed-regular {
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
-
 
 .playpen-sans {
-  font-family: "Playpen Sans", cursive;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Aumentado para 400 para ficar legível em negrito */
+    font-style: normal;
 }
 
+/* --- CONTEÚDO PRINCIPAL --- */
+main {
+    min-height: 85vh; /* Mudado de height para min-height para o fundo não cortar em textos longos */
+    background: repeating-linear-gradient(
+        to right,
+        #20232d,
+        #20232d 10px,
+        #1e182b 10px,
+        #1e182b 20px
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
-.paragrafo{
+.sobre {
+    text-shadow: rgb(0, 0, 0) 0 4px;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.paragrafo {
     color: #c40404;
     background-color: #ada8b6;
     text-align: center;
     border-radius: 10px;
-    margin-left: 450px;
-    margin-right: 450px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 90%; /* Ocupa quase toda a tela no celular */
+    max-width: 800px; /* Não passa de 800px no computador */
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-.mascote{
-  position: relative;
-  margin-left: 65%;
-  bottom: 15%;
+.mascote {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+.mascote img {
+    max-width: 100%;
+    height: auto;
+    width: 250px; /* Limita o tamanho máximo do mascote */
+}
 
+/* --- FOOTER --- */
 footer {
-  background-color:#290d0d;
-  padding: 0px;
-  text-align: center;
-  z-index: 1000;
+    background-color: #290d0d;
+    padding: 20px;
+    text-align: center;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato img {
+    width: 50px; /* Um pouco menor para telas pequenas */
+    height: auto;
+}
+
+/* --- RESPONSIVIDADE (TELAS DE CELULAR) --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Logo fica em cima, menu embaixo */
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Itens do menu ficam um embaixo do outro */
+        gap: 10px;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+    }
+
+    .paragrafo {
+        font-size: 14px; /* Diminui um pouco a letra no celular */
+    }
 }
