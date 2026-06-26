@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-body{
-  overflow: hidden;
-}
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
 
 a{
     text-decoration: none;
