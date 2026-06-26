@@ -22,8 +22,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #290d0d;
-    min-height: 15vh;
-
+    min-height: 10vh;
+    padding: 10px 5%;
 }
 
 .logo {
