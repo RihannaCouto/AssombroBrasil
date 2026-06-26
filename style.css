@@ -38,14 +38,13 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 20px; /* Cria espaçamento entre os itens sem precisar de margin fixa */
+
 }
 
 .nav-list li {
     letter-spacing: 3px;
 }
 
-/* --- FONTES --- */
 .rubik-distressed-regular {
     font-family: "Rubik Distressed", system-ui;
     font-weight: 400;
@@ -55,13 +54,12 @@ nav {
 .playpen-sans {
     font-family: "Playpen Sans", cursive;
     font-optical-sizing: auto;
-    font-weight: 400; /* Aumentado para 400 para ficar legível em negrito */
+    font-weight: 400;
     font-style: normal;
 }
 
-/* --- CONTEÚDO PRINCIPAL --- */
 main {
-    min-height: 85vh; /* Mudado de height para min-height para o fundo não cortar em textos longos */
+    min-height: 85vh;
     background: repeating-linear-gradient(
         to right,
         #20232d,
