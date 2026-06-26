@@ -99,6 +99,7 @@ main {
 
 
 footer {
+  position: relative;
   background-color:#290d0d;
   padding: 0px;
   text-align: center;
