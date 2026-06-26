@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-
+body{
+  overflow: hidden;
+}
 
 a{
     text-decoration: none;
@@ -99,7 +101,6 @@ main {
 
 
 footer {
-  position: relative;
   background-color:#290d0d;
   padding: 0px;
   text-align: center;
