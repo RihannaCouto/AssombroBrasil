@@ -29,12 +29,12 @@ nav {
 .logo {
     max-width: 100%;
     height: auto;
+    margin-left: auto;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    margin-left: auto;
 
 }
 
