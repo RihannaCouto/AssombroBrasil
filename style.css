@@ -24,7 +24,7 @@ nav {
     align-items: center;
     background-color: #290d0d;
     min-height: 15vh;
-    padding: 6px 5%;
+    padding: 10px 5%;
 }
 
 .logo {
@@ -89,12 +89,9 @@ main {
     margin-bottom: 30px;
 }
 
-.mascote {
-    right:0px;
-    margin-bottom: 20px;
-}
 
 .mascote img {
+    right:0px;
     max-width: 100%;
     height: auto;
     width: 250px;
