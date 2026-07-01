@@ -90,7 +90,7 @@ main {
 }
 
 .mascote {
-    text-align:right;
+    right:0px;
     margin-bottom: 20px;
 }
 
