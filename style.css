@@ -91,7 +91,7 @@ main {
 
 
 .mascote {
-    margin-right:10px;
+    float: right;
     max-width: 100%;
     height: auto;
 }
